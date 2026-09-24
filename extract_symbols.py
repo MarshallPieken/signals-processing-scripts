@@ -92,7 +92,7 @@ def decode_qpsk(complex_signal, mode="both"):
         bin: 
     
     I need to learn how the plotted data is structured.
-        - what bits map to what quadrant:
+        - what bits map to what quadrant, for example:
                              Q
                             |   
                    [01]  X  |  X  [11]
