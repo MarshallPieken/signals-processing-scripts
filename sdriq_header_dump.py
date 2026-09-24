@@ -11,7 +11,7 @@ with open(infile,'rb') as f:
     header= f.read(32)
 
 # common SDRIQ layout: sample_rate (uint32 LE) then center_freq (uint64 LE) early in the header
-sample_rate, center_freq, start_timestamp, sample_size = struct.unpack("IQQI", header)
+sample_rate, center_freq, start_timestamp, sample_size = struct.unpack("<IQQI", header)
 
 print("sample rate:",               sample_rate)
 print("file center frequency: ",    center_freq)
